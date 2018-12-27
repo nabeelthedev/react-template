@@ -2,7 +2,7 @@
 A generic react template to build web apps.
 
 ## Install
-1. ```shell git clone https://github.com/nabeelthedev/react-template.git ```
+1. ```git clone https://github.com/nabeelthedev/react-template.git ```
 2. ```cd react-template ```
 3. ```sudo npm install ```
 
