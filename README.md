@@ -2,7 +2,7 @@
 A generic react template to build web apps.
 
 ## Install
-1. ```Shell git clone https://github.com/nabeelthedev/react-template.git ```
+1. ```shell git clone https://github.com/nabeelthedev/react-template.git ```
 2. ```cd react-template ```
 3. ```sudo npm install ```
 
@@ -35,6 +35,8 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 ```
+*bootstrap.**bundle**.js* includes popper.js which is needed for some bootstrap functionality.
+
 ### jQuery
 ```javascript
 import $ from 'jquery'
