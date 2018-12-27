@@ -2,26 +2,26 @@
 A generic react template to build web apps.
 
 ## Install
-1. ```ShellSession git clone https://github.com/nabeelthedev/react-template.git ```
-2. ```ShellSession cd react-template ```
-3. ```ShellSession sudo npm install ```
+1. ```Shell git clone https://github.com/nabeelthedev/react-template.git ```
+2. ```cd react-template ```
+3. ```sudo npm install ```
 
 ## Start
-1. npm run dev
+1. ```npm run dev```
 2. http://localhost:8080/
 
 Open */src/main.js* and start building your react app.
 
 ## Scripts
-Use **npm run dev** to run *webpack-dev-server* to start development testing.
-Use **npm run build** to build before publishing.
+Use ```npm run dev``` to run *webpack-dev-server* to start development testing.<br/>
+Use ```npm run build``` to build before publishing.
 
 ## Libraries
 react, react-dom<br/>
-bootstrap
-jQuery
-webpack, webpack-cli, webpack-dev-server
-babel, babel-loader, babel/preset-env, babel/preset-react
+bootstrap<br/>
+jQuery<br/>
+webpack, webpack-cli, webpack-dev-server<br/>
+babel, babel-loader, babel/preset-env, babel/preset-react<br/>
 css-loader, style-loader
 
 ## How to include libraries
