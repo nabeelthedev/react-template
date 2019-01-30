@@ -21,8 +21,9 @@ react, react-dom<br/>
 bootstrap<br/>
 jQuery<br/>
 webpack, webpack-cli, webpack-dev-server<br/>
-babel, babel-loader, babel/preset-env, babel/preset-react<br/>
-css-loader, style-loader
+babel, babel-loader, babel/preset-env, babel/preset-react, babel/polyfill<br/>
+css-loader, style-loader<br/>
+html-webpack-plugin, html-webpack-root-plugin
 
 ## How to include libraries
 ### react, react-dom
