@@ -1,16 +1,22 @@
-var path = require('path')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackRootPlugin = require('html-webpack-root-plugin')
 
 module.exports = {
   mode: 'production',
-  entry: './src/main',
+  entry: {
+    polyfill: 'babel-polyfill', // some plugins error out w/o polyfill
+    app: './src/main'
+  },
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
-    port: 8080
+    port: 8080,
+    historyApiFallback: true // needed for react router
   },
   module: {
     rules: [{
@@ -34,5 +40,40 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'NabeelTheDev',
+      inject: 'body',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        description: 'A smart app.',
+        author: 'Nabeel Rana'
+      }
+    }),
+    new HtmlWebpackRootPlugin(),
+  ]
 }
+
+// use below if you need to include 'async/defer' to a library
+//
+// const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
+// const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
+//
+//     new HtmlWebpackExternalsPlugin({
+//       externals: [
+//         {
+//           module: 'linkedin',
+//           entry: {
+//             path: 'https://platform.linkedin.com/badges/js/profile.js',
+//             type: 'js'
+//           }
+//         }
+//       ]
+//     }),
+//     new ScriptExtHtmlWebpackPlugin({
+//       custom: {
+//         test: 'https://platform.linkedin.com/badges/js/profile.js',
+//         attribute: 'async defer'
+//       }
+//     }),
