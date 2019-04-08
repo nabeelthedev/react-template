@@ -5,7 +5,7 @@ const HtmlWebpackRootPlugin = require('html-webpack-root-plugin')
 module.exports = {
   mode: 'production',
   entry: {
-    polyfill: 'babel-polyfill', // some plugins error out w/o polyfill
+    polyfill: '@babel/polyfill', // some plugins error out w/o polyfill
     app: './src/main'
   },
   output: {
