@@ -20,16 +20,6 @@ Open _/src/main.js_ and start building your react app.
 Use `npm run dev` to run _webpack-dev-server_ to start development testing.<br/>
 Use `npm run build` to build before publishing.
 
-## Libraries
-
-react, react-dom, react-router-dom<br/>
-bootstrap<br/>
-jQuery<br/>
-webpack, webpack-cli, webpack-dev-server<br/>
-babel, babel-loader, babel/preset-env, babel/preset-react<br/>
-css-loader, style-loader<br/>
-html-webpack-plugin, html-webpack-root-plugin
-
 ## How to include libraries
 
 ### react, react-dom
