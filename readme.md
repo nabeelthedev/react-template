@@ -47,9 +47,3 @@ import 'bootstrap/dist/js/bootstrap.bundle.js'
 ```
 
 _bootstrap.**bundle**.js_ includes popper.js which is needed for some bootstrap functionality.
-
-### jQuery
-
-```javascript
-import $ from 'jquery'
-```
