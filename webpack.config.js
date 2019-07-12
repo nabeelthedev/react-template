@@ -1,11 +1,12 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackRootPlugin = require('html-webpack-root-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
   entry: {
-    polyfill: '@babel/polyfill', // some plugins error out w/o polyfill
+    regeneratorRuntime: 'regenerator-runtime/runtime', // fixes regenerator runtime error
     app: './src/main'
   },
   output: {
@@ -52,6 +53,9 @@ module.exports = {
       }
     }),
     new HtmlWebpackRootPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery'
+    })
   ]
 }
 
