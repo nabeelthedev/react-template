@@ -26,7 +26,7 @@ react, react-dom, react-router-dom<br/>
 bootstrap<br/>
 jQuery<br/>
 webpack, webpack-cli, webpack-dev-server<br/>
-babel, babel-loader, babel/preset-env, babel/preset-react, babel/polyfill<br/>
+babel, babel-loader, babel/preset-env, babel/preset-react<br/>
 css-loader, style-loader<br/>
 html-webpack-plugin, html-webpack-root-plugin
 
